@@ -14,7 +14,10 @@
 
 Las principales características están descritas en [aquí](./docs/database/README.md)
 
-## Gestión del proyecto
+## Diseño de la base de datos 📐✏
+Utilizamos la herramienta [**Lucidchart**](https://www.lucidchart.com/) y puedes ver el diagrama [Aquí](https://www.lucidchart.com/documents/view/1fd0ad5d-e324-44e0-9688-d3851b540766/0_0)
+
+## Gestión del proyecto 
 Utilizamos la herramienta Trello, la gestión desde [Aqui](https://trello.com/b/o4BMDaq8/randyapp)
 
 ### PHP :rocket:
