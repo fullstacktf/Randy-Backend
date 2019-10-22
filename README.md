@@ -14,6 +14,9 @@
 
 Las principales características están descritas en [aquí](./docs/database/README.md)
 
+## Gestión del proyecto
+Utilizamos la herramienta Trello, la gestión desde [Aqui](https://trello.com/b/o4BMDaq8/randyapp)
+
 ### PHP :rocket:
 
 | Característica  | Descripción |
