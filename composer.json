@@ -2,17 +2,14 @@
     "name": "rubn/randy",
     "authors": [
         {
-            "name": "Ruben Zagon",
-            "email": "ruben.zagon@gmail.com"
+            "name": "Ruben Zagon y Carlos",
+            "email": "rubenzg.dev@gmail.com"
         }
     ],
-    "scripts": {
-
-    },
-    "require": {
-    },
+    "scripts": {},
+    "require": {},
     "require-dev": {
         "phpunit/phpunit": "^7.5",
-        "phpdocumentor/phpdocumentor":"2.*"
+        "phpdocumentor/phpdocumentor": "2.*"
     }
 }
