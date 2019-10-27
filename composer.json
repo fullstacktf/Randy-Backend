@@ -1,9 +1,13 @@
 {
-    "name": "rubn/randy",
+    "name": "randyapp",
     "authors": [
         {
-            "name": "Ruben Zagon y Carlos",
+            "name": "Ruben Zagon",
             "email": "rubenzg.dev@gmail.com"
+        },
+        {
+            "name": "Carlos Miguel",
+            "email": ""
         }
     ],
     "scripts": {},
