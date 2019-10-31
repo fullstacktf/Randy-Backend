@@ -13,4 +13,4 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: ./github/actions/setup-dockerfile
+      - uses: ./.github/actions/setup-dockerfile.yml
