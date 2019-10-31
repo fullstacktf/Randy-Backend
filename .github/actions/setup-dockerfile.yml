@@ -1,0 +1,11 @@
+name: Docker Image CI
+
+on: 
+  push:
+    branches:
+      - staging
+
+jobs:
+  steps:
+    - name: Build the Docker image
+      run: docker build . --file ../src/Dockerfile --tag $(MACHINE):$(date +%s)
