@@ -13,6 +13,8 @@ jobs:
       id: checking
       uses: actions/checkout@v1
     - name: Visual thinking
+      env:
+        GITHUB_WORKSPACE: ./src/
       run: ls && printenv
     - name: Build and Run DockerFile and use
       env:
