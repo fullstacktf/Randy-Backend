@@ -6,7 +6,8 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "npm install && node src/server.js",
+    "install": "npm ci"
   },
   "dependencies": {
     "express": "^4.17.1"
