@@ -7,5 +7,4 @@ inputs:
 
 runs:
   using: 'docker'
-  image: '../../src/Dockerfile'
-
+  image: 'Dockerfile'

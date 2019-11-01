@@ -12,6 +12,8 @@ jobs:
     - name: Checking Out the Repo
       id: checking
       uses: actions/checkout@v1
+    - name: Change workdir
+      run: cd ./src/
     - name: Build DockerFile and use
       id: building
       uses: ./.github/actions/
