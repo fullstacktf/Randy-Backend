@@ -2,11 +2,13 @@ version: '3.1'
 
 services:
   db:
-    image: mariadb:10.2
+    image: "mariadb:10.2"
     environment:
-      MYSQL_ROOT_PASSWORD: 4593bw4
+      MYSQL_ROOT_PASSWORD: "1234" 
       MYSQL_DATABASE: randyapp
     restart: always
+    ports:
+      - "3306:3306"
     volumes:
-      - ${PWD}/dbrandyapp:/var/lib/mysql
+      - /tmp/dbrandyapp:/var/lib/mysql
 
