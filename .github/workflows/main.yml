@@ -16,4 +16,4 @@ jobs:
       run: cd ./src/
     - name: Build DockerFile and use
       id: building
-      uses: ./.github/actions/
+      uses: ../.github/actions/
