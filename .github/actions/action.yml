@@ -8,5 +8,4 @@ inputs:
 runs:
   using: 'docker'
   image: '../../src/Dockerfile'
-  args:
-    - ${{ inputs.machine-name }}    
+
