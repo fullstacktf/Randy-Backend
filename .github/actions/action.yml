@@ -6,5 +6,6 @@ inputs:
     default: 'mDemo'
 
 runs:
+  run: cd ./src/
   using: 'docker'
   image: 'Dockerfile'
