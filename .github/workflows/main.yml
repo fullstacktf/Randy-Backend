@@ -12,12 +12,7 @@ jobs:
     - name: Checking Out the Repo
       id: checking
       uses: actions/checkout@v1
-    - name: Visual thinking
-      env:
-        GITHUB_WORKSPACE: /home/runner/work/Randy-Backend/Randy-Backend/src
-      run: ls && printenv
+
     - name: Build and Run DockerFile and use
-      env:
-        GITHUB_WORKSPACE: /home/runner/work/Randy-Backend/Randy-Backend/src
       id: building
-      uses: ./src/
+      uses: ./github/actions/
