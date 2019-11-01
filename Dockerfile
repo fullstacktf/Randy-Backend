@@ -5,4 +5,4 @@ RUN ls
 RUN npm install
 RUN ls
 EXPOSE 8080
-CMD ["ls"]
+CMD ["npm start"]
