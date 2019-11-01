@@ -15,4 +15,4 @@ jobs:
 
     - name: Build and Run DockerFile and use
       id: building
-      uses: ./.github/actions/action.yml
+      uses: ./.github/actions/
