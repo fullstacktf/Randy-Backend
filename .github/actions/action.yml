@@ -1,11 +1,12 @@
-name: Docker Image CI
+name: Docker Build 
+description: 'Some test about docker'
+inputs:
+  machine-name:
+    description: 'name for docker hub'
+    default: 'mDemo'
 
-on: 
-  push:
-    branches:
-      - staging
-
-jobs:
-  steps:
-    - name: Build the Docker image
-      run: docker build . --file ../src/Dockerfile --tag $(MACHINE):$(date +%s)
+runs:
+  using: 'docker'
+  image: './src/Dockerfile'
+  args:
+    - ${{ inputs.machine-name }}    

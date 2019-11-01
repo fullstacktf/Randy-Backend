@@ -1,16 +1,16 @@
-name: Docker Image CI
-
 on: 
   push:
     branches:
       - staging
 
 jobs:
-
-  build:
+  docker-file-job:  
     name: Only one OS
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./.github/actions/
+    - name: Checking Out the Repo
+      id: checking
+      uses: actions/checkout@v1
+    - name: Build DockerFile and use
+      id: building
+      uses: ./.github/actions/
