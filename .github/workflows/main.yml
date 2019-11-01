@@ -13,5 +13,7 @@ jobs:
       id: checking
       uses: actions/checkout@v1
     - name: Build and Run DockerFile and use
+      env:
+        GITHUB_WORKSPACE: ./src/
       id: building
       uses: ./src/
