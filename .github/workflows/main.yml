@@ -12,6 +12,8 @@ jobs:
     - name: Checking Out the Repo
       id: checking
       uses: actions/checkout@v1
+    - name: Visual thinking
+      run: ls 
     - name: Build and Run DockerFile and use
       env:
         GITHUB_WORKSPACE: ./src/
