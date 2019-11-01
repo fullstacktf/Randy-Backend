@@ -2,7 +2,7 @@
   "name": "dockernodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "author": "",
   "license": "ISC",
   "scripts": {
@@ -12,5 +12,5 @@
   "dependencies": {
     "express": "^4.17.1"
   }
- 
+
 }
