@@ -1,0 +1,10 @@
+name: Docker Build 
+description: 'Some test about docker'
+inputs:
+  machine-name:
+    description: 'name for docker hub'
+    default: 'mDemo'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
