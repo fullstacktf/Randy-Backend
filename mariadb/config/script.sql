@@ -1,15 +1,6 @@
-#! bin/bash
-
-echo "Arrancando script que rellena la base de datos\n";
-
-echo "CREANDO BASE DE DATOS";
-
-mysql -u root << MYSQL
-
-DROP DATABASES *;
 CREATE DATABASE RandyDB;
 
-USE DATABASE RandyDB;
+USE RandyDB;
 
 CREATE USER 'sradmin'@'%' IDENTIFIED BY 'contrasena';
 GRANT ALL PRIVILEGES ON *.* TO 'sradmin'@'%';
@@ -27,4 +18,3 @@ INSERT INTO personas (name) VALUES('Ruben'),('Jose'),('Carlos');
 
 ALTER TABLE personas ADD PRIMARY KEY (id);
 
-MYSQL
