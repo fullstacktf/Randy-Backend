@@ -11,6 +11,10 @@ const app = express();
 app.get('/', (req, res) => {
   res.send('Hello world from Alpine\n');
 });
-
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+setTimeout((function() {
+  return process.exit(0);
+}), 2000);
+setInterval(() => {
+  app.listen(PORT, HOST);
+  console.log(`Running on http://${HOST}:${PORT}`);
+},1000)

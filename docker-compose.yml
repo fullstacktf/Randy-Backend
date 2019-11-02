@@ -9,4 +9,7 @@ services:
     restart: always
     volumes:
       - ${PWD}/dbrandyapp:/var/lib/mysql
+  node:
+    image: randy/randy:latest
+    restart: always
 
