@@ -6,6 +6,9 @@ services:
     image: "randy/mariadb:1.0"
     container_name: "randy_mariadb"
     restart: always
-    ports:
-      - "5000:3306"
+    volumes:
+      - ${PWD}/dbrandyapp:/var/lib/mysql
+  node:
+    image: randy/randy:latest
+    restart: always
 
