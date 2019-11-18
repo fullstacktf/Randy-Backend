@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - stable
+branches:
+  only:
+    - master
+after_success:
+  bash scripts/deploy.sh
+# deploy:
+#   local_dir: src
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $GITHUB_TOKEN
+#   keep_history: true
+#   edge: true
+#   on:
+#     branch: master

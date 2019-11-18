@@ -20,8 +20,23 @@ Utilizamos la herramienta [**Lucidchart**](https://www.lucidchart.com/) y puedes
 ## Gestión del proyecto 
 Utilizamos la herramienta Trello, la gestión desde [Aqui](https://trello.com/b/o4BMDaq8/randyapp)
 
-### PHP :rocket:
+### Características :rocket:
 
-| Característica  | Descripción |
-|----------|-------------|
-|    -      |      -       |
+Utilizaremos la arquitectura MERN
+
+| Característica | Descripción                                                                                          |
+| -------------- | ---------------------------------------------------------------------------------------------------- |
+| ESlint         | Revisa el código en JavaScript para mejorar la calidad y en busca de errores                         |
+| Travis         | Servicio de integración continua                                                                     |
+| :whale: Docker | Automatizador de despliegue de aplicaciones dentro de contenedores de software                       |
+| Jest           | Framework para testing en JavaScript                                                                 |
+| Nodemon        | Herramienta para desarrollador que actualiza automáticamente la aplicación node cuando haces cambios |
+
+### NPM Scripts
+
+| Comando         | Descripción                                                    |
+| :-------------- | :------------------------------------------------------------- |
+| `npm run start` | Ejecuta el servidor, pero no se actualiza con cada cambio      |
+| `npm run dev`   | Activa el nodemon para levantar el servidor por el puerto 3000 |
+| `npm run test`  | Pasa los test con Jest                                         |
+| `npm run testw` | Activa Jest en modo --watch                                    |

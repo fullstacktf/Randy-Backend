@@ -1,20 +1,36 @@
 'use strict';
 
 const express = require('express');
+const morgan = require("morgan"); //Te da información de los HTTP
+
+const moviesRouter = require('./api/movies');
+const usersRouter = require('./api/users');
 
 // Constants
-const PORT = 8080;
+const PORT = 3000;
 const HOST = '0.0.0.0';
 
-// App
+// Routes and Middlewares
 const app = express();
-app.get('/', (req, res) => {
-  res.send('Hello world from Alpine\n');
+
+app.use(express.json());
+app.use(morgan("combined"));
+
+app.get('/', (req, res) => { res.send('Hello world from Alpine\n'); });
+app.use('/movies', moviesRouter);
+app.use('/users', usersRouter);
+
+/*
+app.use((err, next) => {
+  if (err) {
+    res.status(500).send(err);
+    return;
+  }
 });
-setTimeout((function() {
-  return process.exit(0);
-}), 2000);
+*/
+
+//APP START
+setTimeout((function() { return process.exit(0); }), 2000);
 setInterval(() => {
   app.listen(PORT, HOST);
-  console.log(`Running on http://${HOST}:${PORT}`);
-},1000)
+  console.log(`Running on http://${HOST}:${PORT}`); },1000);
