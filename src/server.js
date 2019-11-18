@@ -3,7 +3,9 @@
 const express = require('express');
 const morgan = require("morgan"); //Te da información de los HTTP
 
-const moviesRouter = require('./api/movies');
+const billingsRouter = require('./api/billings');
+const calendarRouter = require('./api/calendar');
+const taskRouter = require('./api/tasks_list');
 const usersRouter = require('./api/users');
 
 // Constants
@@ -17,17 +19,19 @@ app.use(express.json());
 app.use(morgan("combined"));
 
 app.get('/', (req, res) => { res.send('Hello world from Alpine\n'); });
-app.use('/movies', moviesRouter);
+app.use('/billings', billingsRouter);
+app.use('/calendar', calendarRouter);
+app.use('/taskslist', taskRouter);
 app.use('/users', usersRouter);
 
-/*
+
 app.use((err, next) => {
   if (err) {
     res.status(500).send(err);
     return;
   }
 });
-*/
+
 
 //APP START
 setTimeout((function() { return process.exit(0); }), 2000);
