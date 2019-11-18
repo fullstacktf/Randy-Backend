@@ -1,16 +1,18 @@
 {
-  "name": "dockernodejs",
+  "name": "randy-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend to the webapp randy",
   "main": "server.js",
-  "author": "",
+  "author": "Carlos M. y Rubén Zagon",
   "license": "ISC",
   "scripts": {
-    "start": "npm install && node src/server.js",
-    "install": "npm ci"
+    "start": "npm install && node src/server.js"
   },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0"
   }
-
 }
