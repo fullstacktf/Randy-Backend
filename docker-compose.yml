@@ -1,14 +1,32 @@
-version: '3.1'
+version: '3.3'
 
 services:
-  db:
-    build: "./mariadb/"
-    image: "randy/mariadb:1.0"
-    container_name: "randy_mariadb"
+  frontend:
+    image: frontend
+    restart: always
+    container_name: "randy_frontend"
+    volumes:
+      - client/prod/:/app/
+    ports:
+      - 80:3000
+    depends_on:
+      - backend
+  backend:
+    image: backend
+    restart: always
+    container_name: "randy_backend"
+    volumes:
+      - .api/prod/:/app/
+    environment:
+      - NODE_ENV=production
+      - PORT=8080
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:latest
+    container_name: "randy_db"
     restart: always
     volumes:
-      - ${PWD}/dbrandyapp:/var/lib/mysql
-  node:
-    image: randy/randy:latest
-    restart: always
-
+      - "db/:/etc/mongo

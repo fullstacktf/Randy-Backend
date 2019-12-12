@@ -3,13 +3,15 @@ const router = express.Router();
 const controller = require('./controller');
 
 
-const getUsers = (req, res) => { res.status(200).json(controller.getUsers());  };
+const getUsers = (req, res) => {
+  res.status(200).json(controller.getUsers());
+};
 
 
 
 const newUser = (req, res) => {
 
-  if (newUserWasCreate){
+  if (newUserWasCreate) {
     res.status(201).json(newUser);
   } else {
     res.status(500).json("No se ha podido realizar su petición");
@@ -18,7 +20,7 @@ const newUser = (req, res) => {
 
 const deleteUser = (req, res) => {
 
-  if (userWasDeleted){
+  if (userWasDeleted) {
     res.status(201).json("Usuario eliminado");
   } else {
     res.status(500).json("No se ha podido realizar su petición");
@@ -27,7 +29,7 @@ const deleteUser = (req, res) => {
 
 const setGroup = (req, res) => {
 
-  if (newGroupWasCreate){
+  if (newGroupWasCreate) {
     res.status(201).json(newGroup);
   } else {
     res.status(500).json("No se ha podido realizar su petición");

@@ -1,11 +1,21 @@
-const controller = require ('../controller');
+const controller = require('../controller');
 
-describe('Users_Controllers',() => {
-  
-  /*
-  test('Debe devolver ',() =>{
-    expect().toBe();
-  })
-*/
+function myFunction(params) {
+  return params
+}
 
+describe('Users_Controllers', () => {
+  describe('Unitarios', () => {
+    test('Debe devolver un JSON con los usuarios', () => {
+      const objeto = {
+        [ObjectId],
+        name: "Carlos",
+        email: "carlosprueba@gmail.com",
+        password: "****",
+        avatar: "src/assets/avatar1.jpg",
+        ID_social_env: "1"
+      }
+      expect(myFunction(objeto)).toEqual(objeto);
+    })
+  });
 });
