@@ -6,7 +6,7 @@
   "author": "Carlos M. y Rubén Zagon",
   "license": "ISC",
   "scripts": {
-    "start": "npm install && node src/server.js",
+    "start": "npm install && node src/testServer.js",
     "dev": "nodemon src/server.js",
     "test": "jest",
     "testw": "jest --watch"

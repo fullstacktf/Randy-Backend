@@ -7,7 +7,10 @@ const mongoose = require('mongoose');
 // const getTasks = (req, res) => { res.status(200).json(controller.getTasks());  };
 
 mongoose.connect('mongodb://mongodb:27017', err => {
-  if (err) throw new Error(err);
+  if (err) {
+    throw err;
+  }
+
   console.log('Connected to mongodb');
 })
 
@@ -16,7 +19,9 @@ const getTasks = (req, res) => {
   console.log('[GET] Tasks');
 
   Task.find((err, tasks) => {
-    if (err) res.status(500).send(err);
+    if (err) {
+      res.status(500).send(err);
+    }
     res.status(200).json(tasks);
   })
 
@@ -54,7 +59,7 @@ const assignTask = (req, res) => {
 //API REST users
 router.get('/', getTasks);
 
-router.post('/', newTask);
+//router.post('/', newTask);
 
 // router.delete('/', deleteTask);
 

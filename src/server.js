@@ -32,7 +32,7 @@ app.use(morgan("combined"));
 
 app.get('/', (req, res) => {
   console.log('[GET] Pagina principal');
-  res.send('Hello world from Alpine\n');
+  res.send('Hola Mundo, soy Randy\n');
 });
 // app.use('/billings', billingsRouter);
 // app.use('/calendar', calendarRouter);
