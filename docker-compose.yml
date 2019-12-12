@@ -17,4 +17,4 @@ services:
     container_name: "randy_db"
     restart: always
     volumes:
-      - /tmp/mongodb/:/etc/mongo
+      - ./db/mongodb/:/etc/mongo
