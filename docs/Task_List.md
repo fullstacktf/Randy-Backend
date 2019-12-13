@@ -6,6 +6,14 @@
 | -------------- | ------------------ |
 | /api/taskslist | Entrega las tareas |
 
+##### JSON que retorna
+```
+  contain: { type: String, require: true, unique: false },
+  updated: { type: Date, default: Date.now() },
+  created: { type: Date, default: Date.now() },
+  checked: { type: Boolean, default: false }
+``` 
+
 ### POST
 
 | url       | Descripción                                                                                            |
