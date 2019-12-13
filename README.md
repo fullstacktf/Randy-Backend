@@ -8,6 +8,9 @@ _Proyecto enfocado a ser una herramienta intuitiva para el entorno familiar, ayu
 
 [@RubénZagon](https://github.com/RubenZagon) :unicorn:
 
+
+:point_down: Rubén solo a 2 semanas de terminar :point_down:
+
 ![Rubén solo a 2 semanas de terminar](https://media.giphy.com/media/UKF08uKqWch0Y/giphy.gif)
 
 ## Características del Back-End :robot:
