@@ -17,7 +17,7 @@ const TaskSchema = new Schema({
     type: Date,
     default: Date.now()
   },
-  cheked: {
+  checked: {
     type: Boolean,
     default: false
   }
